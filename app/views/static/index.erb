@@ -1,2 +1,64 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<body>
+
+	<button type="button" class="btn btn-success">Sign-Up</button>
+
+	<h1 align="center"><font size="15">Hey Short-ly</font></font></h1>
+
+
+	<form align="center" action="/shorten_link" method="post">
+	    <h2 align="center">Get that Short-ly!</h2>
+	    <input type="text" name="long_url" value="">
+	    <p></p>
+	    <input type="submit" value="SHORT-IT!" class="btn btn-danger"></input>
+	</form>
+
+	<table>
+
+
+
+<table id = "output" style="width:100%">
+ <table class="table table-hover">
+  <tr>
+    <th>ID</th>
+	        <th>Long URL</th>
+	        <th>Short URL</th>
+	        <th>Click</th>
+	    </tr>
+	    <% Url.all.order(id: :desc).limit(5).each do |u| %>
+	    <tr>
+	        <td><%= u.id %></td>
+	        <td><%= u.long_url %></td>
+	        <td><a href="<%=u.short_url %>" ><%= u.short_url %></a></td>
+	        <td><%= u.click%></td>
+	    </tr>
+	    <% end %>
+</table>
+
+</body>
+</html>
+
+
+	   <!--  <tr>
+	        <th>ID</th>
+	        <th>Long URL</th>
+	        <th>Short URL</th>
+	        <th>Click</th>
+	    </tr>
+	    <% Url.all.order(id: :desc).limit(10).each do |u| %>
+	    <tr>
+	        <td><%= u.id %></td>
+	        <td><%= u.long_url %></td>
+	        <td><a href="<%=u.short_url %>" ><%= u.short_url %></a></td>
+	        <td><%= u.click%></td>
+	    </tr>
+	    <% end %> -->
+	</table>
+
+</body>
+
+
+
+	
+
+
+

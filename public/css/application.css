@@ -1,0 +1,52 @@
+
+
+h1 {
+  color: red;
+  font-family: 'Monoton', cursive;
+}
+
+h2 {
+    color: grey;
+}
+
+th {
+	color: grey;
+}
+
+td {
+    color: red;
+}
+
+body {
+  background-image: url(http://more-sky.com/data/out/6/IMG_105570.gif);
+background-size: 100%;
+}
+
+
+
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus { 
+    width: 100%;
+}
+table, th, td {
+    border: 2px dotted white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
