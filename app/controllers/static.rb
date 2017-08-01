@@ -3,6 +3,7 @@ get '/' do
 end
 
 post '/shorten_link' do
+  
   p params
   @url = Url.new(long_url: params["long_url"],click: 0)
   p @url

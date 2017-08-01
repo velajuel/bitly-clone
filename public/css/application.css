@@ -6,11 +6,11 @@ h1 {
 }
 
 h2 {
-    color: grey;
+    color: yellow;
 }
 
 th {
-	color: grey;
+	color: white;
 }
 
 td {
@@ -18,7 +18,7 @@ td {
 }
 
 body {
-  background-image: url(http://more-sky.com/data/out/6/IMG_105570.gif);
+  background-image: url(https://images6.alphacoders.com/481/481285.jpg);
 background-size: 100%;
 background-repeat: no-repeat;
 }
